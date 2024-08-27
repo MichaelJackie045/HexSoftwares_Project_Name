@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+ 
+  .todo-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .todo-container:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00796b;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #b2dfdb;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #00796b;
+    outline: none;
+  }
+  
+  button {
+    padding: 12px 18px;
+    border: none;
+    background-color: #00796b;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f1f8e9;
+    border: 1px solid #c5e1a5;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: grab;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: #9e9e9e;
+    background-color: #e0e0e0;
+  }
+  
+  li:hover {
+    background-color: #dcedc8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Pomodoro Timer Styles */
+  .timer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .timer span {
+    font-weight: bold;
+    color: #d84315;
+    font-size: 14px;
+  }
+  
+  .timer button {
+    background-color: #d84315;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .timer button:hover {
+    background-color: #bf360c;
+  }
+  
+ 
+  li button.remove {
+    background-color: #ff5252;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button.remove:hover {
+    background-color: #e53935;
+  }
+  
+ 
+  .dragging {
+    opacity: 0.6;
+    background-color: #e0e0e0;
+    box-shadow: none;
+  }
+  
